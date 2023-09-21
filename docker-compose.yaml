@@ -1,0 +1,12 @@
+# Docker compose template to build in the Dockerfile in the folder and share two folders with the container
+
+
+version: '3.3'
+services:
+  llama_api_server:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/code
+      - ./data:/data
