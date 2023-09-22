@@ -21,5 +21,7 @@ RUN mkdir config
 WORKDIR /home/runninguser/config
 RUN echo "SOME_TOKEN" > tokens.txt
 
-ENTRYPOINT ["./run.sh"]
+COPY . /home/runninguser/
+
+ENTRYPOINT ["../run.sh"]
 

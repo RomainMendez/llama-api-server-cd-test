@@ -4,7 +4,7 @@
 version: '1.0'
 services:
   llama_api_server:
-    build: ghcr.io/romainmendez/llama_api_server-cd-test:latest
+    image: ghcr.io/romainmendez/llama-api-server-cd-test:latest
     ports:
       - "5000:5000"
     volumes:
