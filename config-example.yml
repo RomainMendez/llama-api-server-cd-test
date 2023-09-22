@@ -1,0 +1,12 @@
+models:
+  completions:
+    # completions and chat_completions use same model
+    text-default-llama:
+      type: llama_cpp
+      params:
+        path: ../models/llama-model.bin
+  embeddings:
+    text-default-llama:
+      type: llama_cpp
+      params:
+        path: ../models/llama-model.bin
